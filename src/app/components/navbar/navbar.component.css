@@ -1,0 +1,82 @@
+.flex-center{
+  display: flex;
+  align-items: center;
+}
+
+
+.custom-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+
+  }
+  
+  .desktop-menu {
+    display: flex;
+    gap: 15px;
+  }
+  .desktop-menu a{
+    color: #fff;
+  }
+  .desktop-menu a:hover{
+    color: #ff4081;
+  }
+  .custom-toolbar.desktop-menu li a{
+    color: #fff;
+  }
+  mat-icon{
+    display: none;
+  }
+  .logo mat-icon {
+    display: none;
+  }
+.logo{
+  display: flex;
+  align-items: center;
+}
+  .profile-img {
+    width: 40px; /* Taille de la photo de profil */
+    height: 40px; /* Taille de la photo de profil */
+    border-radius: 50%; /* Pour rendre l'image ronde */
+    margin-right: 10px; /* Espacement entre l'image et le nom */
+  }
+  
+  
+  /* Masque le menu mobile par défaut */
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    padding: 10px;
+    transition: 0.5s;
+    
+  }
+  
+  /* Affiche le menu mobile uniquement si la classe "menuOpened" est activée */
+  .mobile-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  /* RESPONSIVE : Cache le menu desktop sur mobile */
+  @media (max-width: 768px) {
+    .desktop-menu {
+      display: none;
+    }
+  
+    .mobile-menu {
+      display: flex;
+      background-color: #ff4081;
+   
+    }
+    .logo mat-icon {
+      display: block;
+    }
+  }
+  

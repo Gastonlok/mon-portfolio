@@ -1,0 +1,30 @@
+<mat-toolbar class="custom-toolbar">
+    <!-- Bouton menu burger -->
+  <div class="logo">
+    <button mat-icon-button (click)="toggleMenu()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  
+    <!-- Titre -->
+    <span class="flex-center">
+      <img src="assets\img\gas.jpg" alt="Photo de profil" class="profile-img" />
+      Gaston Lokanga
+    </span>
+  </div>
+    <!-- Menu Desktop -->
+    <div class="desktop-menu">
+      <a mat-button routerLink="/">Home</a>
+      <a mat-button routerLink="/about">About</a>
+      <a mat-button routerLink="/project">Projets</a>
+      <a mat-button routerLink="/contact">Contact</a>
+    </div>
+  </mat-toolbar>
+  
+  <!-- Menu Mobile (s'affiche avec ngIf) -->
+  <div class="mobile-menu" *ngIf="menuOpened">
+    <a mat-button routerLink="/" (click)="toggleMenu()">Accueil</a>
+    <a mat-button routerLink="/about" (click)="toggleMenu()">À propos</a>
+    <a mat-button routerLink="/project" (click)="toggleMenu()">Projets</a>
+    <a mat-button routerLink="/contact" (click)="toggleMenu()">Contact</a>
+  </div>
+  

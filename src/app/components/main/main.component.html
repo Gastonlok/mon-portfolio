@@ -1,0 +1,95 @@
+<div class="hero-section">
+    <div class="hero-content">
+      <div class="hero-content-left">
+        <div class="hero-text"><span>Hey salut! </span> <br> Je suis Gaston Lokanga. <br>  #dev fullstack</div> 
+        <button mat-button color="primary">Voir mon cv</button>
+
+      </div>
+        <img src="assets/img/gas.jpg" alt="" class="maPhoto">
+    </div>
+   
+  </div>
+  
+  <div class="container">
+
+    <section class="competences">
+      <h1>Mes Competences</h1>
+      <div class="desc-button">
+          <p class="small-desc">Découvrez les compétences que j'ai acquises. <br> Chaque lieu offre une expérrience unique et mémorable.</p>
+          <div class="buttons">
+              <button>
+                  <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="second" >
+                  <i class="fa-solid fa-chevron-right"></i>
+              </button>
+          </div>
+    
+      </div>
+      <div class="gallery">
+          <div class="image">
+              <img src="assets/img/html.jpg" alt="html">
+              <div class="description">
+                  <h1>HTML & CSS</h1>
+                  <p>j'ai maitriser les bonnes pratiques en html et css </p>
+              </div>
+          </div>
+          <div class="image">
+              <img src="assets/img/angular.webp" alt="Vegetable">
+              <div class="description">
+                  <h1>Angular</h1>
+                  <p>j'ai maitriser les bonnes pratiques d'angular</p>
+              </div>
+          </div>
+          <div class="image">
+              <img src="assets/img/node.png" alt="node js">
+              <div class="description">
+                  <h1>Node js</h1>
+                  <p>Art de vivre, cuisine raffinée et paysage enchanteurs/</p>
+              </div>
+          </div>
+          <div class="image">
+              <img src="assets/img/figma.jpeg" alt="figma">
+              <div class="description">
+                  <h1>Figma</h1>
+                  <p>design ui and ux/</p>
+              </div>
+          </div>                                               
+      </div>
+
+  </section>
+ 
+     <app-formation-list></app-formation-list>
+        <app-projet-list></app-projet-list>
+       
+   
+    <!-- Section sur toi -->
+    <section class="about-me">
+      <h2 class="center color-title">À propos de moi</h2>
+      <div class="about-content">
+
+      <img src="assets/img/gas.jpg" alt="" class="about-img">
+        <div class="about-text">
+            <p>
+              Bonjour, je suis Gaston Manga, un développeur passionné par le développement web et la technologie. 
+              J'ai une solide formation en mathématiques et informatique, et j'aime relever des défis techniques dans la création d'applications innovantes.
+            </p>
+            <p>
+              Avec une expérience dans des projets variés, notamment le développement d'applications web et la gestion de projets, 
+              je cherche toujours à apprendre de nouvelles compétences et à partager mes connaissances avec la communauté.
+            </p>
+            <p>
+              Mon objectif est de créer des expériences utilisateurs de qualité tout en utilisant les dernières technologies du marché.
+              Si vous êtes intéressé par une collaboration ou si vous souhaitez en savoir plus sur mes projets, n'hésitez pas à me contacter.
+            </p>
+        </div>
+    </div>
+    </section>
+    
+    <router-outlet></router-outlet>
+  </div>
+  
+  <footer>
+    <p>© 2025 Mon Portfolio | Développé avec ❤️ par Gaston Manga</p>
+  </footer>
+  

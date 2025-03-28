@@ -1,0 +1,59 @@
+.formation-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  
+    .formation-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .formation-card {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+  
+      &:hover {
+        transform: scale(1.05);
+      }
+  
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+  
+      .formation-details {
+        h3 {
+          margin: 0;
+          font-size: 1.2rem;
+        }
+  
+        p {
+          margin: 5px 0;
+          font-size: 0.9rem;
+          color: #555;
+        }
+  
+        .year {
+          font-size: 0.8rem;
+          color: #666;
+          background: #f3f3f3;
+          padding: 3px 8px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+  

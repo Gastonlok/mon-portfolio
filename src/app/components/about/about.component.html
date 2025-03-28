@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<div class="about-container">
+    <div class="profile">
+      <img src="assets/img/gas.jpg" alt="Gaston Manga">
+      <h1>{{ name }}</h1>
+      <h2>{{ title }}</h2>
+      <p>{{ description }}</p>
+      <a [href]="cvLink" download="CV_Gaston_Manga.pdf" class="btn-download">
+        Télécharger mon CV
+      </a>
+    </div>
+  
+    <div class="skills">
+      <h2>Compétences</h2>
+      <div class="skills-grid">
+        <div *ngFor="let skill of skills" class="skill">
+          <img [src]="skill.icon" [alt]="skill.name">
+          <span>{{ skill.name }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
